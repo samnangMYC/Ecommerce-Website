@@ -26,7 +26,7 @@ function HomePage() {
     );
 
   return (
-    <div className="mx-auto min-h-screen ">
+    <div className="mx-auto scroll-smooth min-h-screen ">
       <Discount />
 
       <Navbar />
@@ -61,7 +61,8 @@ function HomePage() {
 
             <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
               {products.map((product) => (
-                <div
+                <a
+                  href="/product-detail"
                   key={product.id}
                   className="bg-white p-6 rounded-lg hover:shadow-xl transition-shadow"
                 >
@@ -92,7 +93,7 @@ function HomePage() {
                   <button className="w-full py-2 border-2 rounded hover:bg-black hover:text-amber-50 transition-colors">
                     Add to Cart
                   </button>
-                </div>
+                </a>
               ))}
             </div>
           </div>
