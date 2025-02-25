@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { TiStarFullOutline } from "react-icons/ti";
 import "../App.css";
@@ -7,6 +6,7 @@ import useProducts from "../api/hooks/useProducts";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import Discount from "../components/Discount";
+import RouteSection from "../components/RouteSection";
 
 function HomePage() {
   const { products, loading, error } = useProducts();
@@ -30,6 +30,8 @@ function HomePage() {
       <Discount />
 
       <Navbar />
+
+      <RouteSection />
 
       <div className="flex flex-col md:flex-row w-full text-black">
         <Sidebar />

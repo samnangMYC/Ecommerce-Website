@@ -2,8 +2,9 @@ import React from 'react'
 
 const Sidebar = () => {
   return (
-    <aside className="w-full md:w-64 p-4">
+    <aside className="w-full mt-2 md:w-64 px-8">
     <h2 className="text-xl mb-4">Browse by</h2>
+    <hr className='mb-4'/>
     <ul className="space-y-4">
       {[
         "Home",
