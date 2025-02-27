@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="px-4 sticky top-0 z-50 md:px-20 h-24 bg-amber-950 flex justify-between items-center text-amber-200">
+    <nav className="px-4 sticky top-0 z-50 md:px-20 h-20 bg-amber-950 flex justify-between items-center text-amber-200">
       <a href="/">
         <p className="text-2xl  hover:cursor-pointer uppercase">lucky</p>
       </a>
